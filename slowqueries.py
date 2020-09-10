@@ -41,6 +41,7 @@ shell.dump_rows(res)
 
 stmt = "SELECT * FROM INFORMATION_SCHEMA.OPTIMIZER_TRACE"
 res = session.run_sql(stmt)
+shell.dump_rows(res)
 
 session.run_sql("SET optimizer_trace='enabled=off'")
 
